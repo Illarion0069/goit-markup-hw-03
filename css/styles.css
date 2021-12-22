@@ -136,14 +136,15 @@ body {
 /* Стили Герой */
 .hero {
   background-color: #2f303a;
-  text-align: center;
 }
 .main-hero {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   padding-top: 200px;
-  padding-bottom: 200px;
 }
 .hero-title {
-  min-width: 696px;
+  max-width: 696px;
   margin-bottom: 30px;
   color: #ffffff;
   font-size: 44px;
@@ -152,10 +153,12 @@ body {
   font-weight: 900;
   text-transform: uppercase;
 }
-.button-primary {
-  background-color: var(--accent-color);
-  color: #ffffff;
+.hero-button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 200px;
 }
+
 .button-primary:hover,
 .button-primary:focus {
   color: var(--accent-color);
@@ -168,7 +171,8 @@ body {
   font-family: inherit;
 }
 .button-primary {
-  display: inline-block;
+  background-color: var(--accent-color);
+  color: #ffffff;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
@@ -273,15 +277,14 @@ body {
 
 /* Стили страницы Портфолио */
 /* Меню портфолио */
-.section-portfolio {
-  text-align: center;
-}
+
 .button-portfolio {
   padding-top: 95px;
   padding-bottom: 34px;
 }
 .filter {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
 }
 .filter .item {
   margin-right: 8px;
