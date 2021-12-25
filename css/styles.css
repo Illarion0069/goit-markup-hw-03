@@ -372,16 +372,21 @@ body {
   letter-spacing: 0.03em;
   font-style: normal;
 }
+.address.location:hover,
+.address .location:focus {
+  color: var(--accent-color);
+}
 .address .location {
   color: #ffffff;
   text-decoration: none;
   margin-bottom: 9px;
 }
-
-.address.location:hover,
-.address .location:focus {
-  color: var(--accent-color);
+/* -----почта/телефон----------------------------------------------------------------------------------------------------- */
+.address .item,
+.address .location {
+  cursor: pointer;
 }
+
 .address .item {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
@@ -390,9 +395,4 @@ body {
 .address .item:hover,
 .address .item:focus {
   color: var(--accent-color);
-}
-
-.address .item,
-.address .location {
-  cursor: pointer;
 }
