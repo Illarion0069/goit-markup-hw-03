@@ -372,6 +372,9 @@ body {
   letter-spacing: 0.03em;
   font-style: normal;
 }
+.address p {
+  margin-bottom: 9px;
+}
 .address.location:hover,
 .address .location:focus {
   color: var(--accent-color);
@@ -379,7 +382,6 @@ body {
 .address .location {
   color: #ffffff;
   text-decoration: none;
-  margin-bottom: 9px;
 }
 /* -----почта/телефон----------------------------------------------------------------------------------------------------- */
 .address .item,
@@ -390,7 +392,6 @@ body {
 .address .item {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  margin-bottom: 9px;
 }
 .address .item:hover,
 .address .item:focus {
